@@ -1,23 +1,23 @@
-# fly.toml app configuration file generated for part3-practice-divine-wind-7244 on 2025-01-25T12:29:05+08:00
+# fly.toml app configuration file generated for part4-exercises on 2025-01-30T23:51:29+08:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'part3-practice-divine-wind-7244'
+app = 'part4-exercises'
 primary_region = 'sin'
 
 [build]
 
 [env]
-  PORT = "3000" # add this
+  PORT = "3003"
 
 [http_service]
-  internal_port = 3000 # ensure that this is same as PORT
+  internal_port = 3003
   force_https = true
-  auto_stop_machines = true
+  auto_stop_machines = 'stop'
   auto_start_machines = true
   min_machines_running = 0
-  processes = ["app"]
+  processes = ['app']
 
 [[vm]]
   memory = '1gb'

@@ -33,7 +33,6 @@ mongoose.connect(url).then(() => {
   //   mongoose.connection.close()
   // })
   
-
   Blog.find({}).then(result => {
     result.forEach(blog => {
       console.log(blog)
