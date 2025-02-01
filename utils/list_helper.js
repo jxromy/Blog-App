@@ -29,12 +29,7 @@ const mostBlogs = (blogs) => {
       }
   })
   let topAuthor = authors[0]
-  authors.forEach(author => {
-      if (author.blogs > topAuthor.blogs) {
-          topAuthor = author
-      }
-  })
-  return topAuthor
+  return authors.reduce((prev, current) => (prev.blogs > current.blogs) ? prev : current, topAuthor);
 }
 
 const mostLikes = (blogs) => {
@@ -56,12 +51,7 @@ const mostLikes = (blogs) => {
       }
   })
   let topAuthor = authors[0]
-  authors.forEach(author => {
-      if (author.likes > topAuthor.likes) {
-          topAuthor = author
-      }
-  })
-  return topAuthor
+  return authors.reduce((prev, current) => (prev.likes > current.likes) ? prev : current, topAuthor);
 }
 
 module.exports = {
