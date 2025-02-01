@@ -1,20 +1,21 @@
-# Blog App - Full Stack Open (Chapter 4)
+# Blog App - Full Stack Open
 
-This repository contains the backend implementation of a **Blog App**, built as part of [Full Stack Open](https://fullstackopen.com/en/) Chapter 4. The app provides a RESTful API for managing blog posts, including user authentication, CRUD operations, and database integration.
+This repository contains the backend implementation of a **Blog App**, built as part of [Full Stack Open](https://fullstackopen.com/en/). The app provides a RESTful API for managing blog posts, including user authentication, CRUD operations, and database integration.
 
 ## Features
 - User authentication with JSON Web Tokens (JWT)
 - CRUD operations for blogs (Create, Read, Update, Delete)
 - User management (registration & login)
 - MongoDB for data persistence
-- API testing using Node.js built-in test runner
+- Jest and Supertest for unit and integration testing
 
 ## Technologies Used
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB, Mongoose
 - **Authentication:** bcrypt, JWT
-- **Testing:** Node.js built-in test runner
+- **Testing:** Jest, Supertest
 - **Linting & Code Formatting:** ESLint, Prettier
+- **Development:** Nodemon, dotenv
 
 ## Setup Instructions
 ### Prerequisites
