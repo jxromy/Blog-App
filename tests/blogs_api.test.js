@@ -60,7 +60,7 @@ describe('when there is initially some blogs saved', () => {
       assert.strictEqual(response.body.length, helper.initialBlogs.length + 1)
       assert(titles.includes('this is a valid blog'))
     })
-    
+
     test('blog without likes can be added', async () => {
       const newBlog = {
         title: "Blog with missing likes",
@@ -104,7 +104,6 @@ describe('when there is initially some blogs saved', () => {
         .send(newBlog)
         .expect(400)
     })
-
   })
 
   describe('deletion of a blog', () => {
@@ -153,11 +152,8 @@ describe('when there is initially some blogs saved', () => {
       assert.strictEqual(updatedBlogAtEnd.author, updatedBlog.author)
       assert.strictEqual(updatedBlogAtEnd.url, updatedBlog.url)
     })
-
   })
-
 })
-
 
 after(async () => {
   await mongoose.connection.close()
