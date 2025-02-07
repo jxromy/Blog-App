@@ -1,6 +1,6 @@
 # Blog App - Full Stack Open
 
-This repository contains the backend implementation of a **Blog App**, built as part of [Full Stack Open](https://fullstackopen.com/en/). The app provides a RESTful API for managing blog posts, including user authentication, CRUD operations, and database integration.
+This repository contains the backend implementation of a **Blog App**, built as part of [Full Stack Open](https://fullstackopen.com/en/). The app provides a RESTful API for managing blog posts, including user authentication, CRUD operations, and database integration. Please note that the front-end is still under development and is not yet included in the repository.
 
 ## Features
 - User authentication with JSON Web Tokens (JWT)
